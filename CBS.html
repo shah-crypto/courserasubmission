@@ -1,0 +1,139 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>CBS by Coursera</title>
+    <style> 
+    h1{
+        text-align:center;
+        font-family:"Comic Sans MS", cursive, sans-serif;
+        grid-area:h1;
+    }
+    .container{
+        text-align:center;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        display:grid;
+        grid-template-areas:
+        'h1 h1 h1 h1 h1 h1'
+        'inner-div1 inner-div1 inner-div2 inner-div2 inner-div3 inner-div3'
+    }
+    .inner-div1{
+        background-color:#66839C; 
+        display: inline-block;
+        text-align:left;
+        margin:0 3% 4% 3%;
+        font-family:Arial, Helvetica, sans-serif;
+        border:2px solid black;
+        box-sizing:border-box;
+        box-shadow:0 2px 5px #aaa;
+        grid-area:inner-div1;
+    }
+    .inner-div2{
+        background-color:#66839C; 
+        display: inline-block;
+        text-align:left;
+        margin:0 3% 4% 3%;
+        font-family:Arial, Helvetica, sans-serif;
+        border:2px solid black;
+        box-sizing:border-box;
+        box-shadow:0 2px 5px #aaa;
+        grid-area:inner-div2;
+    }
+    .inner-div3{
+        background-color:#66839C; 
+        display: inline-block;
+        text-align:left;
+        margin:0 3% 4% 3%;
+        font-family:Arial, Helvetica, sans-serif;
+        border:2px solid black;
+        box-sizing:border-box;
+        box-shadow:0 2px 5px #aaa;
+        grid-area:inner-div3;
+    }
+    h2{
+        margin:0;
+        font-family:Verdana, Geneva, sans-serif;
+        border-bottom:2px solid black;
+    }
+    p{
+        padding:0 5%;
+    }
+    .chicken{
+        background-color:#e23acff8;
+        text-align:center;
+    }
+    .beef{
+        background-color:#7B4230;
+        color:white;
+        text-align:center;
+    }
+    .sushi{
+        background-color:#D4C38D;
+        text-align:center;
+    }
+    @media (max-width:900px){
+        .container{
+        text-align:center;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        display:grid;
+        grid-template-areas:
+        'h1 h1 h1 h1 h1 h1'
+        'inner-div1 inner-div1 inner-div1 inner-div2 inner-div2 inner-div2'
+        'inner-div3 inner-div3 inner-div3 inner-div3 inner-div3 inner-div3'
+    }
+    }
+    @media (max-width:400px){
+        .inner-div3{
+            margin:0%;
+        }
+        .container{
+        text-align:center;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        display:grid;
+        grid-template-areas:
+        'h1 h1 h1 h1 h1 h1'
+        'inner-div1 inner-div1 inner-div1 inner-div1 inner-div1 inner-div1'
+        'inner-div2 inner-div2 inner-div2 inner-div2 inner-div2 inner-div2'
+        'inner-div3 inner-div3 inner-div3 inner-div3 inner-div3 inner-div3'
+    }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+    <main>
+        <div class="container">
+        <div class="inner-div1">
+            <h2 class="chicken">Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="inner-div2">
+            <h2 class="beef">Beef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="inner-div3">
+            <h2 class="sushi">Sushi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
